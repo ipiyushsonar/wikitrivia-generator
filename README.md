@@ -1,8 +1,8 @@
 # WikiTrivia Generator
 
-The code for generating cards for https://wikitrivia.tomjwatson.com.
+The code for generating cards for https://wikitrivia.piyushsonar.in.
 
-The repository for the website can be found [here](https://github.com/tom-james-watson/wikitrivia).
+The repository for the website can be found [here](https://github.com/ipiyushsonar/wikitrivia).
 
 ## Development
 

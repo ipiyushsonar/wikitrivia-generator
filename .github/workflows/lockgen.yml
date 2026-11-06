@@ -1,0 +1,18 @@
+name: lockgen
+on:
+  push:
+    branches: [ "chore/upgrade-urlencoding-v2" ]
+permissions:
+  contents: read
+jobs:
+  lock:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: cargo update
+      - run: cargo build --verbose
+      - run: cargo test --verbose
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cargo-lock
+          path: Cargo.lock
